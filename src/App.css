@@ -1,0 +1,192 @@
+.navbar-brand {
+  margin-left: 15rem;
+  font-size: 30px;
+}
+
+.custom-toggler.navbar-toggler {
+  color: rgba(255, 255, 255, 0.5); /* Customize the color */
+  border-color: rgba(255, 255, 255, 0.1); /* Customize the border color */
+}
+
+.homebg {
+  background-image: url(../public/bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 35rem;
+}
+
+#title {
+  text-align: center;
+  padding-top: 1rem;
+  color: rgb(233, 206, 138);
+  margin-right: 12rem;
+}
+
+.navbar-nav .nav-link {
+  color: rgb(233, 206, 138);
+  margin-left: 2.7rem;
+}
+
+.dropdown-menu {
+  color: goldenrod;
+  display: none;
+  background-color: #0e0d0d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+
+.dropdown-menu li {
+  cursor: grabbing;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.line {
+  color: rgb(233, 206, 138);
+  height: 10px;
+  width: 100%;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.foot h3 {
+  color: rgb(233, 206, 138);
+  font-size: 20px;
+}
+
+.foot h3 a {
+  text-decoration: none;
+  color: rgb(233, 206, 138);
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: rgb(233, 206, 138);
+  font-size: 23px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+#about {
+  color: rgb(233, 206, 138);
+  margin: 5rem 8rem 5rem 8rem;
+  font-family: cursive;
+  line-height: 1.5;
+}
+
+.kitchen-slider {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(../public/bg.png);
+  background-repeat: no-repeat;
+}
+
+
+.kitchen-slider .slick-slide img {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 80rem;
+  height: 28rem;
+  margin: 60px;
+  margin-left: 7rem;
+  vertical-align: middle;
+
+}
+
+.kitchen-slider .slick-slide {
+  height: 35rem;
+  border: 1px groove white;
+}
+
+.kitchen-slider h1 {
+  text-align: center;
+  color: rgb(233, 206, 138);
+}
+
+.all {
+  display: grid;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.all-furniture img {
+  height: 40rem;
+  width: 40rem;
+  margin-right: auto;
+}
+
+
+@keyframes floatFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.float-from-left {
+  animation: floatFromLeft 20s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    margin-left: 0.1rem;
+    font-size: 15px; /* Smaller font size for smaller devices */
+  }
+
+  #title {
+    margin-right: 0;
+  }
+
+  .nav-item {
+    margin-left: 0.5rem;
+  }
+
+  .dropdown-menu {
+    padding: 0.5rem;
+  }
+
+  .kitchen-slider .slick-slide img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .foot h3{
+    font-size:15px;
+  }
+
+  .contact-info h3{
+    font-size: 15px;
+  }
+
+  .homebg {
+    background-size: 100% auto; /* Ensure background image covers the entire width */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30rem;
+  }
+  #about{
+    font-size: 20px;
+    color: rgb(233, 206, 138);
+    margin: 25px;
+    font-family: cursive;
+    line-height: 1.5;
+  }
+  .all-furniture img{
+    width: 24rem;
+    height: 30rem;
+  }
+}
